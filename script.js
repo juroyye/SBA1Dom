@@ -20,7 +20,10 @@ document.getElementById("justin").firstElementChild.addEventListener("mouseover"
     window.alert("Careful! He's a JavaScript legend!")
 })
 
+// use of prompt 
 document.getElementById("Jeff").firstElementChild.addEventListener("click", onclick = () => {
-    window.prompt("Where does Jeff get his burgers from?")
+    window.prompt("Where does Jeff get his burgers from?") 
     document.getElementById("Jeff").style.color = "green"
 })
+
+
