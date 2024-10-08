@@ -54,4 +54,13 @@ lines.forEach((line) => {
 // DOM Event based validation 
 document.getElementById("mainInput").maxLength = "10"
 
+document.getElementById("btn1").addEventListener("mouseover", ()=> {
+    document.getElementById("btn1").style.backgroundColor = "red"
+})
+document.getElementById("btn1").addEventListener("mouseleave", ()=> {
+    document.getElementById("btn1").style.backgroundColor = ""
+})
+
+
+
 
