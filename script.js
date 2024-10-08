@@ -20,12 +20,7 @@ document.getElementById("main-chart").appendChild(newStudent)
 
 document.getElementById("justin").firstElementChild.addEventListener("mouseover", onmouseenter = () => {
     window.alert("Careful! He's a JavaScript legend!")
-})
-
-// use of prompt 
-document.getElementById("Jeff").firstElementChild.addEventListener("click", onclick = () => {
-    window.prompt("Where does Jeff get his burgers from?") 
-    document.getElementById("Jeff").style.color = "green"
+    document.getElementById("justin").firstElementChild.removeEventListener("mouseover", onmouseenter)
 })
 
 
