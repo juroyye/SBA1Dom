@@ -3,7 +3,7 @@ document.body.style.backgroundImage = "url('https://wallpaperaccess.com/full/159
 document.body.style.backgroundSize= "cover"
 // using getElementById
 // also used styling here
-document.getElementById("main-chart").style.color = "red";
+document.getElementById("main-chart").style.color = "green";
 
 //using QuerySelector
 // used nextElementSibling
@@ -24,8 +24,23 @@ document.getElementById("justin").firstElementChild.addEventListener("mouseover"
 })
 
 
-
 document.getElementById("main").style.height = "100vh";
+document.getElementById("main").style.display ="flex"
+document.getElementById("main").style.alignItems = "center"
+document.getElementById("main").style.justifyContent = "space-around"
 
 
+document.getElementById("prompt").style.padding = "30px"
 
+const lines = document.querySelectorAll("#main-chart tr")
+
+lines.forEach((line) => {
+
+    line.addEventListener("mouseover", () => {
+        line.style.backgroundColor = "orange"
+    })
+
+    line.addEventListener("mouseleave", () => {
+        line.style.backgroundColor = "";
+    })
+})
