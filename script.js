@@ -1,4 +1,6 @@
 
+document.body.style.backgroundImage = "url('https://wallpaperaccess.com/full/159160.png')"
+document.body.style.backgroundSize= "cover"
 // using getElementById
 // also used styling here
 document.getElementById("main-chart").style.color = "red";
@@ -25,5 +27,10 @@ document.getElementById("Jeff").firstElementChild.addEventListener("click", oncl
     window.prompt("Where does Jeff get his burgers from?") 
     document.getElementById("Jeff").style.color = "green"
 })
+
+
+
+document.getElementById("main").style.height = "100vh";
+
 
 
