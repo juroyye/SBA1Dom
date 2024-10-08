@@ -34,7 +34,13 @@ document.getElementById("prompt").style.padding = "30px"
 
 const lines = document.querySelectorAll("#main-chart tr")
 
+
+// iterating through a collection of elements to highlight the row
 lines.forEach((line) => {
+
+    line.addEventListener("click", () => {
+        confirm("Click OK if this is your favorite employee!")
+    })
 
     line.addEventListener("mouseover", () => {
         line.style.backgroundColor = "orange"
@@ -44,3 +50,8 @@ lines.forEach((line) => {
         line.style.backgroundColor = "";
     })
 })
+
+// DOM Event based validation 
+document.getElementById("mainInput").maxLength = "10"
+
+
